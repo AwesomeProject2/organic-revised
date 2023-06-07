@@ -1,0 +1,72 @@
+@use './variables' as *;
+
+// INDEX.HTML Starts Here
+header {
+    background-image: url(../assets/header/background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+    max-width: 1920px;
+}
+
+// Navbar
+nav {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    img {
+        cursor: pointer;
+    }
+}
+
+// Counting from 0, like a true programmer
+.flex0 {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.papayaFlex {
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+    img {
+        max-width: 75%
+    }
+}
+
+.textResize {
+    max-width: 500px;
+    p {
+        padding: 1.5rem 0;
+    }
+}
+
+// CONTACT.HTML Starts Here
+
+.contactHeroImage {
+    height: 50vh;
+    
+    h3 {
+        color: $white;
+        font-size: 175%;
+        font-weight: 600;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
