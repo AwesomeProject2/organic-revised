@@ -1,42 +1,42 @@
 {
     "product1": {
         "name": "tomatoes",
-        "price": 350
+        "price": 35,
+        "url": "./assets/product1.jpeg"
     },
     "product2": {
         "name": "lime",
-        "price": 350
+        "price": 78,
+        "url": "./assets/product2.jpeg"
     },
     "product3": {
         "name": "tomatoes",
-        "price": 350
+        "price": 11,
+        "url": "./assets/product3.jpeg"
     },
     "product4": {
         "name": "tomatoes",
-        "price": 350
+        "price": 45,
+        "url": "./assets/product4.jpeg"
     },
     "product5": {
         "name": "tomatoes",
-        "price": 350
+        "price": 158,
+        "url": "./assets/product5.jpeg"
     },
     "product6": {
         "name": "tomatoes",
-        "price": 350
+        "price": 255,
+        "url": "./assets/product6.jpeg"
     },
     "product7": {
         "name": "tomatoes",
-        "price": 350
+        "price": 52,
+        "url": "./assets/product7.jpeg"
     },
     "product8": {
         "name": "tomatoes",
-        "price": 350
-    },
-    "product9": {
-        "name": "tomatoes",
-        "price": 350
-    },
-    "product10": {
-        "name": "tomatoes",
-        "price": 350
+        "price": 3,
+        "url": "./assets/product8.jpeg"
     }
 }
