@@ -10,32 +10,32 @@
         "url": "./assets/product2.jpeg"
     },
     "product3": {
-        "name": "tomatoes",
+        "name": "eggplant",
         "price": 11,
         "url": "./assets/product3.jpeg"
     },
     "product4": {
-        "name": "tomatoes",
+        "name": "zucchini",
         "price": 45,
         "url": "./assets/product4.jpeg"
     },
     "product5": {
-        "name": "tomatoes",
+        "name": "peas",
         "price": 158,
         "url": "./assets/product5.jpeg"
     },
     "product6": {
-        "name": "tomatoes",
+        "name": "olives",
         "price": 255,
         "url": "./assets/product6.jpeg"
     },
     "product7": {
-        "name": "tomatoes",
+        "name": "cabbage",
         "price": 52,
         "url": "./assets/product7.jpeg"
     },
     "product8": {
-        "name": "tomatoes",
+        "name": "lettuce",
         "price": 3,
         "url": "./assets/product8.jpeg"
     }
