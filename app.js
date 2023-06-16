@@ -1,8 +1,9 @@
-import { app } from "./firebase.js";
-import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+// import { app } from "./firebase.js";
+// import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+import { filterProducts } from "./filter.js";
 
 
-const database = getDatabase(app);
-const dbRef = ref(database);
+// const database = getDatabase(app);
+// const dbRef = ref(database);
 
-get(dbRef).then(snapshot => console.log(snapshot.val()))
+filterProducts()
