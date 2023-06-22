@@ -1,5 +1,6 @@
 import { app } from "./firebase.js";
 import { getDatabase, ref, get, onValue } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+import htmlToAppend from "./htmlToAppend.js";
 
 const database = getDatabase(app);
 const dbRef = ref(database);
@@ -20,26 +21,14 @@ export const filterProducts = () => {
 
         onValue(dbRef, (data) => {
             if (data.exists()) {
-                const allProducts = data.val();
-                for (let key in allProducts) {
-                    const productValue = allProducts[key].value;
-                    if (productValue === selectedValue) {
-
-                        const productTitle = allProducts[key].name;
-                        const productPrice = allProducts[key].price;
-                        const productUrl = allProducts[key].url;
-
-                        const htmlToAppend = `
-                        <div>
-                            <img src="${productUrl}" alt="Tomatoes, Lettuce and Cucumber">
-                            <h4>${productTitle}</h4>
-                            <p>Lorem Ipsum Doior Sit Amet, Consectetus Adipisicing Elit.</p>
-                            <!-- Change font or tag if needed -->
-                            <p class="price">$<span class="price-num">${productPrice}</span></p>
-                            <button class="button">Add To Cart</button>
-                        </div>
-                        `
-                        products.innerHTML += htmlToAppend;
+                const databaseProducts = data.val();
+                for (let key in databaseProducts) {
+                    const allProducts = databaseProducts[key];
+                    const productValue = databaseProducts[key].price;
+                    if (selectedValue === '<50' && productValue < 50) {
+                        htmlToAppend(allProducts);
+                    } else if (selectedValue === '>50' && productValue > 50) {
+                        htmlToAppend(allProducts);
                     }
                 }
             }
