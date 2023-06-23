@@ -11,6 +11,8 @@ const userInput = document.getElementById('searchInput');
 const searchForm = document.getElementById('searchForm');
 const flex2Container = document.querySelector('.flex2');
 const flex3Container = document.querySelector('.flex3');
+const flex2Default = flex2Container.innerHTML;
+const flex3Default = flex3Container.innerHTML;
 
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -34,13 +36,13 @@ searchForm.addEventListener('submit', (event) => {
                     //storing the default galleryItem style in a variable w template literals
                     const htmlToAppend = `
                     <div class="galleryItem">
-                        <img src="${item.url}" alt="Product Image">
+                        <img src="${item.url}" alt="${item.name}">
                         <h4>${item.name}</h4>
-                <p>${item.description}</p>
-                <p class="price">$${item.price}</p>
-                <button class="button">Add To Cart</button>
-            </div>
-            `;
+                        <p>${item.description}</p>
+                        <p class="price">$${item.price}</p>
+                        <button class="button">Add To Cart</button>
+                    </div>
+                    `;
                     //showing correct galleryItem in gallery
                     flex2Container.insertAdjacentHTML('beforeend', htmlToAppend);
                     itemFound = true;
@@ -53,10 +55,20 @@ searchForm.addEventListener('submit', (event) => {
                 searchInput.placeholder = 'Item not found';
                 userInput.style.border = '1px solid red';
             } else {
-                //remove red border on subsequent searches
+                //remove red border on subsequent searches without click on Clear
                 const searchInput = document.getElementById('searchInput');
                 searchInput.style.border = '';
             }
         }
     });
+});
+
+//clear search functionality 
+const clearButton = document.getElementById('clearButton');
+
+clearButton.addEventListener('click', () => {
+    userInput.value = '';
+    flex2Container.innerHTML = flex2Default;
+    flex3Container.innerHTML = flex3Default;
+    userInput.style.border = '';
 });
