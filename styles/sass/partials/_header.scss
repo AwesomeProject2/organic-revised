@@ -1,0 +1,103 @@
+@use './variables' as *;
+
+// INDEX.HTML Starts Here
+header {
+    background-image: url(../assets/header/background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+    max-width: 1920px;
+}
+
+// Navbar
+nav {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    img {
+        cursor: pointer;
+    }
+}
+
+// Counting from 0, like a true programmer
+.flex0 {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+.papayaFlex {
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+    img {
+        max-width: 75%
+    }
+}
+
+.textResize {
+    max-width: 500px;
+    p {
+        padding: 1.5rem 0;
+    }
+}
+
+.field2 {
+    box-shadow: 1px 1px 12.5px rgba(0, 0, 0, 0.35);
+}
+
+.field-style {
+    box-sizing: border-box; 
+    padding: 8px;
+    outline: none;
+    border: 1px solid #b0e0c2;
+    border-radius: 5px;
+    ul li .field-style:focus {
+        box-shadow: 0 0 5px #b0e0c2;
+        border: 1px solid #b0e0c2;
+    }
+}
+
+.field-style-borderless {
+    box-sizing: border-box;
+    outline: none;
+    border-color: transparent;
+}
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }
+
+// CONTACT.HTML Starts Here
+
+.contactHeroImage {
+    height: 50vh;
+    
+    h3 {
+        color: $white;
+        font-size: 175%;
+        font-weight: 600;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
