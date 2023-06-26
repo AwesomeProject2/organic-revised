@@ -203,13 +203,6 @@ template {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
 }
 
 .sr-only {
@@ -217,7 +210,6 @@ html {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
@@ -284,11 +276,6 @@ button:hover {
 
 li:hover, li:focus {
   color: #207200;
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-  cursor: pointer;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
 }
 
 .color-change-start {
@@ -298,7 +285,6 @@ li:hover, li:focus {
 .section1 {
   height: 50vh;
 }
-.section1 h2 {
   padding: 1rem 0;
 }
 .section1 p {
@@ -510,12 +496,8 @@ li:hover, li:focus {
   background: #fafafa;
   padding: 30px 30px 50px 30px;
   margin: 50px auto;
-  -webkit-box-shadow: 1px 1px 12.5px rgba(0, 0, 0, 0.35);
-          box-shadow: 1px 1px 12.5px rgba(0, 0, 0, 0.35);
-  border-radius: 5px;
 }
 .section5 .formStyle ul {
-  padding: 0;
   margin: 0;
   list-style: none;
 }
@@ -537,12 +519,8 @@ li:hover, li:focus {
   border-radius: 5px;
 }
 .section5 .formStyle ul li .field-style:focus {
-  -webkit-box-shadow: 0 0 5px #b0e0c2;
-          box-shadow: 0 0 5px #b0e0c2;
-  border: 1px solid #b0e0c2;
 }
 .section5 .formStyle ul li .field-split {
-  width: 49%;
 }
 .section5 .formStyle ul li .field-full {
   width: 100%;
@@ -914,4 +892,17 @@ button {
   .section4 {
     height: 130vh;
   }
+}
+
+.filter {
+  display: flex;
+  gap: 10px;
+}
+
+#filter {
+  background-color: #207200;
+  padding: 0 0 0 25px;
+  color: white;
+  border:3px solid #289e4b;
+  border-radius: 15px;
 }

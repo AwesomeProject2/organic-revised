@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Organic</title>
-	<link rel="shortcut icon" href="./assets/logo.png"/>
+	<link rel="shortcut icon" href="./assets/logo.png" />
 	<!-- This provides every FontAwesome link on the site, all packaged into one. -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
@@ -30,8 +30,9 @@
 				<div class="flex0">
 					<div class="field-style">
 						<i class="fa-solid fa-magnifying-glass"></i>
-						<label	class="sr-only" for="search">Search</label>
-						<input type="text" name="field2" class="field-style-borderless" placeholder="Enter an item..." aria-label="true"/>
+						<label class="sr-only" for="search">Search</label>
+						<input type="text" name="field2" class="field-style-borderless" placeholder="Enter an item..."
+							aria-label="true" />
 					</div>
 					<ul class="flex0">
 						<li><a href="./index.html"></a>Home</li>
@@ -44,9 +45,10 @@
 			<div class="papayaFlex">
 				<div class="textResize">
 					<h1>Providing Tasty & Healthy Food
-					<p>Quis autem vel eum ire reprehenderit qui in ea voluptate velit esse quam nihil molestiae vel illum
-					qui dolorem eum velit esse quam nihil consequatur qui in ea el </p>
-					<button class="button">Shop Now</button>
+						<p>Quis autem vel eum ire reprehenderit qui in ea voluptate velit esse quam nihil molestiae vel
+							illum
+							qui dolorem eum velit esse quam nihil consequatur qui in ea el </p>
+						<button class="button">Shop Now</button>
 				</div>
 				<div>
 					<img src="./assets/header/header.png" alt="Papayas, Strawberries and Blueberries">
@@ -65,12 +67,12 @@
 						<!-- Almost missed this one. A full stop (period) at the end of the sentence! -->
 						<h2>Providing Best Organic Products.</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, necessitatibus explicabo
-						adipisci sed, sunt officiis facilis delectus earum omnis quidem qui perferendis totamimpedit
-						aut libero, voluptatibus nisi non at!</p>
+							adipisci sed, sunt officiis facilis delectus earum omnis quidem qui perferendis totamimpedit
+							aut libero, voluptatibus nisi non at!</p>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Totam natus itaque modi. Maxime fugit cupiditate
-						dignissimos id voluptates ducimus in.</p>
+							Totam natus itaque modi. Maxime fugit cupiditate
+							dignissimos id voluptates ducimus in.</p>
 						<button class="button">Shop Now</button>
 					</div>
 					<div>
@@ -85,83 +87,93 @@
 					<h3 class="centeredText">OUR PRODUCTS</h3>
 				</div>
 				<div class="spaceResize">
-					<p class="centeredText">Lorem ipsum dolor sit amet, consectetur adipisiciing elit. Molestiae quae minus, dolorem 	presentium
-					explicabo ispam.</p>
+					<p class="centeredText">Lorem ipsum dolor sit amet, consectetur adipisiciing elit. Molestiae quae
+						minus, dolorem presentium
+						explicabo ispam.</p>
+				</div>
+				<div class="filter">
+					<form action="" class="filter">
+						<select name="filter" id="filter">
+							<option value="default" selected disabled>Filter by:</option>
+							<option value="<50">Less than $50</option>
+							<option value=">50">More than $50</option>
+						</select>
+					</form>
+
+					<button class="clear">Clear Filters</button>
 				</div>
 				<!-- Flexbox here. 8 layers -->
 				<div class="flex2">
 					<!-- #1 -->
 					<div>
 						<img src="./assets/product1.jpeg" alt="Tomatoes, Lettuce and Cucumber">
-						<h4>Mix Vegetables</h4>
+						<h4>Tomatoes</h4>
 						<p>Lorem Ipsum Doior Sit Amet, Consectetus Adipisicing Elit.</p>
 						<!-- Change font or tag if needed -->
-						<p class="price">$370 <strike>$350</strike></p>
+						<p class="price">$<span class="price-num">35</span></p>
 						<button class="button">Add To Cart</button>
 					</div>
 					<!-- #2 -->
 					<div>
 						<img src="./assets/product2.jpeg" alt="Lime attached to leaves">
-						<h4>Mix Vegetables</h4>
+						<h4>Lime</h4>
 						<p>Lorem Ipsum Doior Sit Amet, Consectetus Adipisicing Elit.</p>
 						<!-- Change font or tag if needed -->
-						<p class="price">$370 <strike>$350</strike></p>
+						<p class="price">$<span class="price-num">78</span></p>
 						<button class="button">Add To Cart</button>
 					</div>
 					<!-- #3 -->
 					<div>
 						<img src="./assets/product3.jpeg" alt="3 aubergines">
-						<h4>Mix Vegetables</h4>
+						<h4>Eggplant</h4>
 						<p>Lorem Ipsum Doior Sit Amet, Consectetus Adipisicing Elit.</p>
 						<!-- Change font or tag if needed -->
-						<p class="price">$370 <strike>$350</strike></p>
+						<p class="price">$<span class="price-num">11</span></p>
 						<button class="button">Add To Cart</button>
 					</div>
 					<!-- #4 -->
 					<div>
 						<img src="./assets/product4.jpeg" alt="3 aubergines and some lettuce">
-						<h4>Mix Vegetables</h4>
+						<h4>Zucchini</h4>
 						<p>Lorem Ipsum Doior Sit Amet, Consectetus Adipisicing Elit.</p>
 						<!-- Change font or tag if needed -->
-						<p class="price">$370 <strike>$350</strike></p>
+						<p class="price">$<span class="price-num">45</span></p>
 						<button class="button">Add To Cart</button>
 					</div>
-				</div>
-				<div class="flex3">
 					<!-- #5 -->
 					<div>
 						<img src="./assets/product5.jpeg" alt="Pea pods attached to leaves">
-						<h4>Mix Vegetables</h4>
+						<h4>Peas</h4>
 						<p>Lorem Ipsum Doior Sit Amet, Consectetus Adipisicing Elit.</p>
 						<!-- Change font or tag if needed -->
-						<p class="price">$370 <strike>$350</strike></p>
+						<p class="price">$<span class="price-num">158</span></p>
 						<button class="button">Add To Cart</button>
 					</div>
 					<!-- #6 -->
 					<div>
 						<img src="./assets/product6.jpeg" alt="Lettuce">
-						<h4>Mix Vegetables</h4>
+						<h4>Olives</h4>
 						<p>Lorem Ipsum Doior Sit Amet, Consectetus Adipisicing Elit.</p>
 						<!-- Change font or tag if needed -->
-						<p class="price">$370 <strike>$350</strike></p>
+						<p class="price">$<span class="price-num">255</span></p>
 						<button class="button">Add To Cart</button>
 					</div>
 					<!-- #7 -->
 					<div>
 						<img src="./assets/product7.jpeg" alt="Olives attached on a branch">
-						<h4>Mix Vegetables</h4>
+						<h4>Cabbage</h4>
 						<p>Lorem Ipsum Doior Sit Amet, Consectetus Adipisicing Elit.</p>
 						<!-- Change font or tag if needed -->
-						<p class="price">$370 <strike>$350</strike></p>
+						<p class="price">$<span class="price-num">52</span></p>
 						<button class="button">Add To Cart</button>
 					</div>
 					<!-- #8 -->
 					<div>
 						<img src="./assets/product8.jpeg" alt="A whole lettuce">
-						<h4>Mix Vegetables</h4>
+						<h4>Lettuce</h4>
 						<p>Lorem Ipsum Doior Sit Amet, Consectetus Adipisicing Elit.</p>
 						<!-- Change font or tag if needed -->
-						<p class="price">$370 <strike>$350</strike></p>
+						<p class="price">$<span class="price-num">3</span></p>
 						<button class="button">Add To Cart</button>
 					</div>
 				</div>
@@ -175,8 +187,9 @@
 					<h3 class="centeredText">OUR GALLERY</h3>
 				</div>
 				<div class="spaceResize">
-					<p class="centeredText">Lorem ipsum dolor sit amet, consectetur adipisiciing elit. Molestiae quae minus, dolorem presentium
-					explicabo ispam.</p>
+					<p class="centeredText">Lorem ipsum dolor sit amet, consectetur adipisiciing elit. Molestiae quae
+						minus, dolorem presentium
+						explicabo ispam.</p>
 				</div>
 				<div class="centeredText">
 					<button class="button">All</button>
@@ -207,8 +220,9 @@
 			<section class="section4">
 				<h3 class="centeredText">LATEST NEWS</h3>
 				<!-- Nice 'Engrish' -->
-				<p class="centeredText">Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent middleton be as it
-				curiosity departure ourselves very extreme future.</p>
+				<p class="centeredText">Outlived no dwelling denoting in peculiar as he believed. Behaviour excellent
+					middleton be as it
+					curiosity departure ourselves very extreme future.</p>
 				<div class="flex7">
 					<div class="box">
 						<img src="./assets/blog1.jpg" alt="A mixed assortment of fruits and vegetables">
@@ -241,8 +255,9 @@
 				<!-- The divs below keeps each column together -->
 				<div>
 					<img src="./assets/logo.png" alt="REG Logo">
-					<p class="spaceResize3">Affronting discretion as do is announcing. Now months esteem oppose nearer enable too six. as do
-					nearer is announcing.</p>
+					<p class="spaceResize3">Affronting discretion as do is announcing. Now months esteem oppose nearer
+						enable too six. as do
+						nearer is announcing.</p>
 					<!-- Decided to use Font Awesome icons instead for better usability, accessibility and to add animations. -->
 					<div class="flex9">
 						<button>
@@ -269,14 +284,14 @@
 				</div>
 				<div class="spaceResize4">
 					<h3>Quick Links</h3>
-						<p>About Us</p>
-						<p>Our Product</p>
-						<p>Our Blog</p>
-						<p><a href="./contact.html">Contact Us</a></p>
-						<!-- Grammar error in the design. I fixed it for you. -->
-						<p>Become a Member</p>
-						<p>Case Studies</p>
-					</div>
+					<p>About Us</p>
+					<p>Our Product</p>
+					<p>Our Blog</p>
+					<p><a href="./contact.html">Contact Us</a></p>
+					<!-- Grammar error in the design. I fixed it for you. -->
+					<p>Become a Member</p>
+					<p>Case Studies</p>
+				</div>
 				<div>
 					<h3>Recent Products</h3>
 					<!-- This flex puts it into a column, with the picture to the left of the writing -->
@@ -311,7 +326,8 @@
 					<p>5319 Trussville Crossings Pkwy, Birmingham AL 35235</p>
 					<p><b>Phone:</b></p>
 					<p>+8801688005654</p>
-					<input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" aria-label="true" required/>
+					<input type="email" name="field2" class="field-style field-split align-right" placeholder="Email"
+						aria-label="true" required />
 				</div>
 			</div>
 		</div>
@@ -320,7 +336,7 @@
 			<p>Copyright © 2023. All Rights Reserved.</p>
 		</div>
 	</footer>
-	
+
 	<!-- Javascript Goes Here -->
 	<script src="./script.js"></script>
 
