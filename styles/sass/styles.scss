@@ -1,0 +1,8 @@
+// These partials make SASS work.
+@use "./partials/setup";
+@use "./partials/global";
+@use "./partials/variables";
+@use "./partials/main";
+@use "./partials/footer";
+@use "./partials/header";
+@use "./partials/media";
