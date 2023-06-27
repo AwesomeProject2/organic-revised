@@ -4,21 +4,21 @@ import { getDatabase, ref, get, orderByChild, equalTo } from "https://www.gstati
 //firebase tomfoolery 
 const database = getDatabase(app);
 const dbRef = ref(database);
-get(dbRef).then(snapshot => console.log(snapshot.val()))
+// get(dbRef).then(snapshot => console.log(snapshot.val()))
 
 //traversing the DOM
 const userInput = document.getElementById('searchInput');
 const searchForm = document.getElementById('searchForm');
 const flex2Container = document.querySelector('.flex2');
-const flex3Container = document.querySelector('.flex3');
-const flex2Default = flex2Container.innerHTML;
-const flex3Default = flex3Container.innerHTML;
+// const flex3Container = document.querySelector('.flex3');
+// const flex2Default = flex2Container.innerHTML;
+// const flex3Default = flex3Container.innerHTML;
 
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const searchTerm = userInput.value.toLowerCase();
     flex2Container.innerHTML = '';
-    flex3Container.innerHTML = '';
+    // flex3Container.innerHTML = '';
 
     // Rest of the code for searching and displaying results
     get(dbRef).then((snapshot) => {
@@ -68,7 +68,7 @@ const clearButton = document.getElementById('clearButton');
 
 clearButton.addEventListener('click', () => {
     userInput.value = '';
-    flex2Container.innerHTML = flex2Default;
-    flex3Container.innerHTML = flex3Default;
+    // flex2Container.innerHTML = flex2Default;
+    // flex3Container.innerHTML = flex3Default;
     userInput.style.border = '';
 });
